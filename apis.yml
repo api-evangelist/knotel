@@ -1,19 +1,52 @@
 aid: knotel
 name: Knotel
-description: Knotel is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Knotel is a flexible workspace and managed office provider that designs, builds, and operates
+  tailored office space for companies across a global network of locations including Amsterdam,
+  Austin, Berlin, London, Miami, and Paris (through its Deskeo partner). Its business is organized
+  around managed office experiences, member work clubs such as Wyncatcher and Old Sessions House,
+  and a services arm covering design and delivery, fit-out, furniture, amenity and hospitality,
+  workplace strategy, technology and AV, catering, and day-to-day workplace operations. Knotel also
+  works directly with brokers and with building owners who want space leased and operated on their
+  behalf. Knotel is a real estate services business and publishes no public developer API, SDKs, or
+  developer portal; its member-facing mobile app is a white-labeled deployment of the Spacebring
+  coworking platform. The one machine-readable surface it does publish is an llms.txt describing its
+  site for AI agents, alongside a robots.txt that explicitly permits the major AI crawlers.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://knotel.directus.app/assets/5cb99fe6-9366-4c78-9481-1f9ca5cc0681.jpg
 url: https://raw.githubusercontent.com/api-evangelist/knotel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bloomberg-beta
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: no-public-api
+x-no-public-api: >-
+  Enrichment pass 2026-07-19 confirmed no developer portal, no API reference, no OpenAPI, no SDKs,
+  no webhooks, and no OAuth surface. The site soft-404s (HTTP 200) on every unmatched path, so
+  status codes were verified against a control path and by content-type before anything was recorded.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Real Estate
+- Commercial Real Estate
+- Flexible Workspace
+- Managed Office
+- Coworking
+- Workplace Services
+- PropTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +56,22 @@ maintainers:
 common:
 - type: Website
   url: https://knotel.com
+- type: About
+  url: https://knotel.com/about
+- type: Blog
+  url: https://knotel.com/knoteworthy
+- type: LLMsTxt
+  url: llms/knotel-llms.txt
+- type: WellKnown
+  url: well-known/knotel-well-known.yml
+- type: DomainSecurity
+  url: security/knotel-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/knotel/
+- type: Instagram
+  url: https://www.instagram.com/knotel/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
