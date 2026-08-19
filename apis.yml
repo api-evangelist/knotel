@@ -35,7 +35,7 @@ x-no-public-api: >-
   Enrichment pass 2026-07-19 confirmed no developer portal, no API reference, no OpenAPI, no SDKs,
   no webhooks, and no OAuth surface. The site soft-404s (HTTP 200) on every unmatched path, so
   status codes were verified against a control path and by content-type before anything was recorded.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
