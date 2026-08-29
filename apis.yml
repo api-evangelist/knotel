@@ -12,6 +12,17 @@ description: >-
   developer portal; its member-facing mobile app is a white-labeled deployment of the Spacebring
   coworking platform. The one machine-readable surface it does publish is an llms.txt describing its
   site for AI agents, alongside a robots.txt that explicitly permits the major AI crawlers.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
